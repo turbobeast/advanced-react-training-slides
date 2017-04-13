@@ -49,8 +49,8 @@
 ## React Router V4
 
 - declarative API
-- browser history api by default
-- [https://reacttraining.com/react-router/](https://reacttraining.com/react-router/)
+- browser history API by default
+- Docs: [https://reacttraining.com/react-router/](https://reacttraining.com/react-router/)
 
 ---
 
@@ -62,4 +62,37 @@
 - `match`, `history`, and `location` passed into components
 - `Link` component intercepts/avoids reload
 - `Switch` component renders first matching route
-- `render` function allows 
+- `render` function allows more control over what is rendered
+
+---
+
+## Server-Side Rendering
+
+- improves SEO (pages can be indexed/read by crawlers and bots)
+- accessibility (app works without javascript enabled)
+- performance
+
+---
+
+## SSR Re-cap
+
+---
+
+## Lazy Loading
+
+- break-up initial bundle
+- site loads faster
+- less JS to parse/compile (faster TTI)
+
+---
+
+## Lazy Loading Re-cap
+
+- `require.ensure()` tells webpack to split bundle
+-  path in `require()` must be hard-coded
+- higher-order component handles calling load function and rendering
+- object rest spread transform `{...props}`
+
+---
+
+# Thanks
