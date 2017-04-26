@@ -25,8 +25,7 @@
 ## Structure of this Training
 
 - 2 hours training
-- 20 min Intro/Slides
-- 1h 40 min Live Coding
+- 10% slides 90% live coding
 - Routing (with React Router V4)
 - Server-Side Rendering (with express.js)
 - Lazy Loading
