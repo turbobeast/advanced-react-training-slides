@@ -25,8 +25,7 @@
 ## Structure of this Training
 
 - 2 hours training
-- 20 min Intro/Slides
-- 1h 40 min Live Coding
+- 10% slides 90% live coding
 - Routing (with React Router V4)
 - Server-Side Rendering (with express.js)
 - Lazy Loading
@@ -82,7 +81,7 @@ npm install
 ## What is SSR?
 - Server-Side Rendering
 - AKA Universal, Isomorphic
-- initial DOM and state are generated and served
+- Initial DOM and state are generated and served
 
 +++
 
@@ -115,19 +114,22 @@ npm install
 
 ## Live coding exercise
 
-Code along or just watch
+If you don't have the repo cloned yet:
 - Clone the repo: `git clone git@github.com:turbobeast/advanced-react-training.git`
 - Change directory: `cd advanced-react-training`
 - Install dependencies: `npm install`
+
+Once you have the repo installed:
+- Create a branch off master: `git checkout master -b add-ssr`
 
 ---
 
 ## SSR Re-cap
 - Setup express server to serve up static content from build
 - Add custom routing for landing pages
-  - generate DOM content
-  - generate initial state
-  - serve cached content
+  - Generate DOM content
+  - Generate initial state
+  - Serve cached content
 
 ---
 
