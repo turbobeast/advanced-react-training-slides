@@ -27,14 +27,19 @@
 - 2 hours training
 - 20 min Intro/Slides
 - 1h 40 min Live Coding
+- Routing (with React Router V4)
+- Server-Side Rendering (with express.js)
+- Lazy Loading
 
 ---
 
-## Curriculum
+## Get Started
 
-- Routing (with React Router V4)
-- Server-Side Rendering (with express.js)
-- TBD
+```bash
+git clone git@github.com:turbobeast/advanced-react-training.git
+cd advanced-react-training
+npm install
+```
 
 ---
 
@@ -42,14 +47,14 @@
 
 - Navigation within a single-page application (without page reload)
 - Deep-link (address-bar)
-- Browser history
+- Browser History
 
 ---
 
 ## React Router V4
 
-- declarative API
-- browser history API by default
+- Declarative API
+- Browser history API by default
 - Docs: [https://reacttraining.com/react-router/](https://reacttraining.com/react-router/)
 
 ---
@@ -58,7 +63,7 @@
 
 - Wrap Routes in BrowserRouter/Router
 - Route component takes a `path` and a `component`
-- url params in `path` defined with `/:name`
+- URL params in `path` defined with `/:name`
 - `match`, `history`, and `location` passed into components
 - `Link` component intercepts/avoids reload
 - `Switch` component renders first matching route
@@ -68,9 +73,9 @@
 
 ## Server-Side Rendering
 
-- improves SEO (pages can be indexed/read by crawlers and bots)
-- accessibility (app works without javascript enabled)
-- performance
+- Improves SEO (pages can be indexed/read by crawlers and bots)
+- Accessibility (app works without javascript enabled)
+- Performance
 
 ---
 
@@ -80,18 +85,18 @@
 
 ## Lazy Loading
 
-- break-up initial bundle
-- site loads faster
-- less JS to parse/compile (faster TTI)
+- Break-up initial bundle
+- Site loads faster
+- Less JS to parse/compile (faster TTI)
 
 ---
 
 ## Lazy Loading Re-cap
 
 - `require.ensure()` tells webpack to split bundle
--  path in `require()` must be hard-coded
-- higher-order component handles calling load function and rendering
-- object rest spread transform `{...props}`
+- Path in `require()` must be hard-coded
+- Higher-order component handles calling load function and re-rendering `setState`
+- Object rest spread transform `{...props}`
 
 ---
 
