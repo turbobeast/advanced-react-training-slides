@@ -72,13 +72,64 @@ npm install
 
 ## Server-Side Rendering
 
-- Improves SEO (pages can be indexed/read by crawlers and bots)
-- Accessibility (app works without javascript enabled)
-- Performance
+- What is SSR?
+- Pros/Cons
+- High-level implementation overview
+
++++
+
+## What is SSR?
+- Server-Side Rendering
+- AKA Universal, Isomorphic
+- Initial DOM and state are generated and served
+
++++
+
+## Pros/Cons
+
+- Pros
+  - Fast initial load
+    - cached DOM content and state
+    - reduces client requests on load
+  - SEO
+- Cons
+  - Additional code to manage (server.js/index.js)
+  - Two mindsets while coding (client/server)
+
++++
+
+## High-level implementation overview
+1. Statically build
+- Serve content using express
+- Add custom routes for landing pages
+- Update index.html to have replaceable content
+- Read index.html as a string
+- Import and initialize the store
+- Setup babel and import root of code (index.js)
+- Render to a string using initialized store
+- Inject DOM and state into markup
+- Serve up cached markup on request
+
++++
+
+## Live coding exercise
+
+If you don't have the repo cloned yet:
+- Clone the repo: `git clone git@github.com:turbobeast/advanced-react-training.git`
+- Change directory: `cd advanced-react-training`
+- Install dependencies: `npm install`
+
+Once you have the repo installed:
+- Create a branch off master: `git checkout master -b add-ssr`
 
 ---
 
 ## SSR Re-cap
+- Setup express server to serve up static content from build
+- Add custom routing for landing pages
+  - Generate DOM content
+  - Generate initial state
+  - Serve cached content
 
 ---
 
